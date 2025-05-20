@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>RAVENEA: A Benchmark for Multimodal Retrieval-Augmented Visual Culture Understanding</title>
+  <link rel="icon" type="image/x-icon" href="static/images/ravenea_logo.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="columns is-5 has-text-centered"></div>
+            <img src="static/images/ravenea_logo.svg" alt="RAVENEA Logo" class="logo" style="height: 10em;">
+            </div>
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">RAVENEA: A Benchmark for Multimodal Retrieval-Augmented Visual Culture Understanding</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://jiaangli.github.io/" target="_blank">Jiaang Li</a><sup>1*&#8224</sup>,</span>
+                <span class="author-block">
+                  <a href="https://yfyuan01.github.io/" target="_blank">Yifei Yuan</a><sup>2&#8224;</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://wenyanli.org/" target="_blank">Wenyan Li</a><sup>1</sup>,
+                  </span>
+                  </br>
+                  <span class="author-block">
+                    <a href="https://aliannejadi.com/" target="_blank">Mohammad Aliannejadi</a><sup>3</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://danielhers.github.io/" target="_blank">Daniel Hershcovich</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://anderssoegaard.github.io/" target="_blank">Anders Søgaard</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://sites.google.com/site/ivanvulic/" target="_blank">Ivan Vulić</a><sup>4</sup>,
+                  </span>
+                  </br>
+                  <span class="author-block">
+                    <a href="https://pliang279.github.io/" target="_blank">Paul Pu Liang</a><sup>5</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://isakzhang.github.io/" target="_blank">Wenxuan Zhang</a><sup>6</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://dengyang17.github.io/" target="_blank">Yang Deng</a><sup>7&#8225;</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://sergebelongie.github.io/" target="_blank">Serge Belongie</a><sup>1&#8225;</sup>
+                  </span>
+                </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- <span class="author-block">Institution Name<br>Conferance name and year</span> -->
+                    <span class="is-size-6 author-block"><sup>1</sup>University of Copenhagen,&nbsp&nbsp<sup>2</sup>ETH Zürich,&nbsp&nbsp<sup>3</sup>University of Amsterdam,&nbsp&nbsp</br>
+                    <sup>4</sup>University of Cambridge,&nbsp&nbsp
+                    <sup>5</sup>Massachusetts Institute of Technology,&nbsp&nbsp<br>
+                    <sup>6</sup>Singapore University of Technology and Design,&nbsp&nbsp<sup>7</sup>Singapore Management University,&nbsp&nbsp</span>
+                    <span class="eql-cntrb"><br><sup>*</sup><small>Project lead</small></span>&nbsp&nbsp
+                    <span class="eql-cntrb"><sup>&#8224</sup><small>Equal Contribution</small></span>&nbsp&nbsp
+                    <span class="eql-cntrb"><sup>&#8225</sup><small>Corresponding Authors</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/yfyuan01/RAVENEA" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Huggingface Data link -->
+                  <span class="link-block">
+                    <a href="https://huggingface.co/datasets/jaagli/ravenea" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="static/images/hf-logo.svg" alt="Hugging Face" style="height: 20em; width: auto;">
+                    </span>
+                    <span>Data</span>
+                  </a>
+                </span>
+
+                <!-- Model link -->
+                <span class="link-block">
+                    <a href="https://huggingface.co/datasets/jaagli/ravenea" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="static/images/hf-logo.svg" alt="Hugging Face" style="height: 20em; width: auto;">
+                    </span>
+                    <span>Models (Coming soon)</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+                </span>
+                <!-- Bibtex -->
+                <span class="link-block">
+                  <a href="#BibTeX"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-quote-right"></i>
+                  </span>
+                  <span>Citation</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+<section class="hero teaser" style="margin-top: -3rem; padding-top: 0;">
+    <div class="text-box">
+                <p>We present RAVENEA, a large-scale benchmark with <strong>10K+ human-ranked</strong> Wikipedia docs for culture-aware VL tasks. 
+                We find retrieval boosts lightweight VLMs, showing the power of cultural augmentation.</p>
+    </div>
+    <style>
+    .text-box {
+            width: 100%; /* Thinner box */
+            max-width: 1200px;
+            margin: 1rem auto;
+            padding: 20px;
+            background-color: #ccf1ae;
+            border: 3px solid rgb(121, 226, 69);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            line-height: 1.8; /* Slightly increased for readability with larger text */
+            font-size: 1.5rem; /* Increased base font size for larger text */
+        }
+
+        .text-box strong {
+            font-weight: bold;
+        }
+    </style>
+
+    <div class="container is-max-desktop">
+    <div class="hero-body">
+        <img src="static/images/overview_dataset.png" alt="RAVENEA Banner" class="banner-image" style="width: 100%; max-height: 400px; object-fit: contain;">
+        <h2 class="subtitle has-text-centered">
+        We introduce RAVENEA: A Multimodal <strong>R</strong>etrieval-<strong>A</strong>ugmented <strong>V</strong>isual cultur<strong>E</strong> u<strong>N</strong>d<strong>E</strong>rst<strong>A</strong>nding dataset. 
+        It features cultural visual question answering and image captioning tasks, with a diverse geographic and categorical distribution of cultural references. 
+        Our evaluation across 14 vision-language models demonstrates how culture-aware retrieval significantly improves performance on these challenging tasks.
+    </h2>
+    </div>
+    </div>
+
+    
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            As vision-language models (VLMs) become increasingly integrated into daily life, the need for accurate visual culture understanding is becoming critical. 
+            Yet, these models frequently fall short in interpreting cultural nuances effectively. 
+            Prior work has demonstrated the effectiveness of retrieval-augmented generation (RAG) in enhancing cultural understanding in text-only settings, while its application in multimodal scenarios remains underexplored. 
+            To bridge this gap, we introduce RAVENEA (<strong>R</strong>etrieval-<strong>A</strong>ugmented <strong>V</strong>isual cultur<strong>E</strong> u<strong>N</strong>d<strong>E</strong>rst<strong>A</strong>nding), a new benchmark designed to advance visual culture understanding through retrieval, focusing on two tasks: culture-focused visual question answering (cVQA) and culture-informed image captioning (cIC). 
+            RAVENEA extends existing datasets by integrating over 10,000 Wikipedia documents curated and ranked by human annotators. 
+            With RAVENEA, we train and evaluate seven multimodal retrievers for each image query, and measure the downstream impact of retrieval-augmented inputs across fourteen state-of-the-art VLMs. 
+            Our results show that lightweight VLMs, when augmented with culture-aware retrieval, outperform their non-augmented counterparts (by at least 3.2% absolute on cVQA and 6.2% absolute on cIC). 
+            This highlights the value of retrieval-augmented methods and culturally inclusive benchmarks for multimodal understanding.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3"></div>Another Carousel</h2>
+      <div</div> id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+    </div>      </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</video></section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
